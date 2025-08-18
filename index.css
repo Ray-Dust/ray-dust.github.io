@@ -87,14 +87,17 @@ nav ul li {
 }
 
 /* 导航菜单链接样式 */
-nav ul li a {
+nav ul li a,
+.github-icon {
     color: black;
     text-decoration: none;
 }
 
 /* 导航菜单链接悬停和激活状态样式 */
 nav ul li a:hover,
-nav ul li a:active {
+nav ul li a:active,
+.github-icon:hover,
+.github-icon:active {
     color: #4CAF50;
 }
 
