@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 字体定义 */
 @font-face {
     font-family: 'HarmonyOS Sans SC';
     src: url('../font/hmos-sc/HarmonyOS_Sans_SC_Thin.ttf') format('truetype');
@@ -49,28 +50,6 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-}
-
-/* 按钮容器样式 */
-.button-container {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-/* 按钮样式 */
-.button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    text-align: center;
-}
-
-.button:hover {
-    opacity: 0.9;
 }
 
 /* 头部样式 */
@@ -202,17 +181,31 @@ main {
     border-radius: 16px;
 }
 
+/* 按钮容器样式 */
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* 按钮样式 */
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
 /* 汉化项目区域样式 */
 .i18n-project {
     margin: 2rem 0;
-}
-
-/* 汉化工具区域样式 */
-.i18n-tools {
-    margin: 2rem 0;
-    background: #e8f5e9;
-    padding: 1rem;
-    border-radius: 8px;
 }
 
 /* 汉化项目网格布局 */
@@ -225,6 +218,14 @@ main {
 /* 汉化项目项样式 */
 .i18n-project-item {
     background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* 汉化工具区域样式 */
+.i18n-tools {
+    margin: 2rem 0;
+    background: #e8f5e9;
     padding: 1rem;
     border-radius: 8px;
 }
