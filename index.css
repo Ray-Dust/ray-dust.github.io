@@ -78,7 +78,7 @@ header {
     background: #e8f5e9;
     color: black;
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -95,7 +95,7 @@ header {
 
 /* Logo样式 */
 .logo {
-    height: 3rem;
+    height: 2rem;
     margin-right: 20px;
 }
 
