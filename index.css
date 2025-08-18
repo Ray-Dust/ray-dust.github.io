@@ -48,6 +48,28 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
+/* 按钮容器样式 */
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* 按钮样式 */
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    opacity: 0.9;
     color: #333;
 }
 
@@ -112,7 +134,7 @@ nav ul li a:active,
     display: none;
     position: absolute;
     background-color: #e8f5e9;
-    width: fit-content;
+    width: calc(fit-content + 4px);
     padding: 0 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
@@ -145,6 +167,12 @@ nav ul li a:active,
     display: block;
 }
 
+/* 项目按钮悬停和点击效果 */
+.dropdown:hover span,
+.dropdown.active span {
+    color: #4CAF50;
+}
+
 /* 主内容区域样式 */
 main {
     padding: 20px;
@@ -152,10 +180,21 @@ main {
     margin: 0 auto;
 }
 
-/* 英雄区域样式 */
-.hero {
-    text-align: center;
+/* 主要区域样式 */
+.main {
+    display: flex;
+    gap: 2rem;
+    text-align: left;
     padding: 2rem 0;
+}
+
+.main > div {
+    flex: 1;
+}
+
+.main > div:last-child img {
+    width: 100%;
+    height: auto;
 }
 
 /* 汉化项目区域样式 */
@@ -211,18 +250,6 @@ main {
 .i18n-tools-item h4 {
     display: inline-block;
     margin: 0;
-}
-
-/* 新闻区域样式 */
-.news {
-    margin: 2rem 0;
-}
-
-/* 新闻项样式 */
-.news-item {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
 }
 
 /* 页脚样式 */
