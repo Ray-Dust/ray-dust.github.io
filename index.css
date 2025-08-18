@@ -130,6 +130,7 @@ nav ul li a:active,
     color: black;
     text-decoration: none;
     display: block;
+    line-height: 0.1;
 }
 
 /* 下拉菜单链接悬停和激活状态样式 */
