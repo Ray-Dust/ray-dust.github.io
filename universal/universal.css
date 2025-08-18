@@ -250,3 +250,38 @@ nav ul li a:active,
 .dropdown.active span {
     color: #4CAF50;
 }
+
+/* 页脚样式 */
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* 页脚布局 */
+.footer-copyright {
+    grid-column: 4;
+    text-align: left;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* 页脚链接样式 */
+footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: left;
+}
